@@ -8,10 +8,10 @@ const app=express();
 const auth=require('./Routes/userRoutes')
 const adminAuth=require('./Routes/adminRoutes')
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }))
+app.use(cors({credentials: true }))
 app.use(cookieParser())
 db();
 app.use('/api/auth', auth);
 app.use(express.static(path.join(__dirname,'/public/Photos')))
 app.use('/api/auth/admin',adminAuth)
-app.listen(process.env.PORT)
+app.listen(process.env.PORT||5000)
