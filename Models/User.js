@@ -1,0 +1,43 @@
+const mongoose =require('mongoose');
+const userschema= new mongoose.Schema(
+    {
+        Name:{
+            type:String,
+            required:true
+        },
+        Email:{
+            type:String,
+            required:true,
+            unique:true
+        },
+        Password:{
+            type:String,
+            required:true
+        },
+        Gender:{
+            type:String,
+            required:true
+        },
+        DateofBirth:{
+            type:Date,
+            required:true
+        },
+        isAdmin:{
+            type:Boolean,
+            default:false
+        },
+        isApproved:{
+            type:Boolean,
+            default:false
+        },
+        isCompleted:{
+            type:Boolean,
+            default:false
+        },
+        profilePic:{
+            type:String,
+            default:"images-U6Ozv9j9uf-15-7-2023.png"
+        }
+    }
+)
+module.exports=mongoose.model("User",userschema)

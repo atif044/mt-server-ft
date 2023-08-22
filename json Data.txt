@@ -1,0 +1,19 @@
+{
+  "familyBackground":{
+    "fatherStatus":"Alive",
+    "motherStatus":"Alive"
+  },
+  "Siblings":3,
+  "Interests":["Website Development","Programming","Mobile App Development"],
+  "Hobbies":["Cricket","Ludo","Swimming"],
+  "location":{
+    "city":"lahore",
+    "country":"pakistan",
+    "address":"Johar Town"
+  },
+  "nationality":"Pakistani",
+  "religon":"Islam",
+  "education":"BS in Computer Science",
+  "Profession":"Website Developer",
+  "description":"Lorem Ipsum"
+}
